@@ -26,6 +26,7 @@ main {
 
 article {
   background-color: #e0f2e9;
+  height: 100vh;
   border: 1px solid black;
   width: -moz-fit-content;
   width: fit-content;
