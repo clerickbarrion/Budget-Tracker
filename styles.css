@@ -85,7 +85,6 @@ article > h1 {
   animation-name: fade-in;
   animation-duration: 2s;
   transition: transform 2s;
-  display: block;
 }
 #budget-container #income-container p:hover, #budget-container #expense-container p:hover {
   color: red;
@@ -117,16 +116,14 @@ article > h1 {
   }
   article {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     width: 100%;
-  }
-  article h1 {
-    order: 2;
-  }
-  article .total-container {
-    order: 1;
   }
   article .budget-data-container {
     flex-direction: column;
+  }
+  article #budget-container {
+    height: 57vh;
+    max-height: 57vh;
   }
 }/*# sourceMappingURL=styles.css.map */

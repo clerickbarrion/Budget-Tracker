@@ -98,7 +98,6 @@ article {
         p {
             @include animations(fade-in, 2s);
             transition: transform 2s;
-            display:block;
             &:hover{
                 color: red;
                 text-decoration: line-through;
@@ -136,16 +135,15 @@ article {
     }
     article{
         display:flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
         width: 100%;
-        h1 {
-            order: 2;
-        }
-        .total-container {
-            order: 1;
-        }
+        
         .budget-data-container {
             flex-direction: column;
+        }
+        #budget-container {
+            height:57vh;
+            max-height: 57vh;
         }
     }
 }
