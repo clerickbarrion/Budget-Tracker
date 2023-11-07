@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <article>
+            <h1>Monthly Budget Tracker</h1>
+            <section id="budget-container">
+                <div>
+                    <h1>Income</h1>
+                    <hr>
+                    <div id="income-container"></div>
+                </div>
+                <div>
+                    <h1>Expenses</h1>
+                    <hr>
+                    <div id="expense-container"></div>
+                </div>
+            </section>
+
+            <section class="total-container">
+                <div>Income: $<mark id="income"></mark></div>
+                <div>Budget: $<mark id="budget"></mark></div>
+                <div>Expenses: $<mark id="expenses"></mark></div>
+            </section>
+
+            <section class="budget-data-container">
+                <div class="input-container">
+                    <div class="input-items">
+                        <label for="income-description">Income Description:</label>
+                        <input type="text" id="income-description" placeholder="Type of income">
+                    </div>
+                    <div class="input-items">
+                        <label for="income-number">Amount:</label>
+                        <input type="number" id="income-number" placeholder="0.00">
+                    </div>
+                    <button type="button" id="add-income">Add Income</button>
+                </div>
+                <div class="input-container">
+                    <div class="input-items">
+                        <label for="expense-description">Expense Description:</label>
+                        <input type="text" id="expense-description" placeholder="Type of expense">
+                    </div>
+                    <div class="input-items">
+                        <label for="expense-number">Amount:</label>
+                        <input type="number" id="expense-number" placeholder="0.00">
+                    </div>
+                    <button type="button" id="add-expense">Add Expense</button>
+                </div>
+            </section>
+
+        </article>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
