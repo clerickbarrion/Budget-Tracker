@@ -127,4 +127,15 @@ article > h1 {
     height: 57vh;
     max-height: 57vh;
   }
+}
+@media (max-width: 340px) {
+  #income-description, #expense-description {
+    width: 50%;
+  }
+  .total-container {
+    font-size: 1rem;
+  }
+  #budget-container div h1 {
+    font-size: 1rem;
+  }
 }/*# sourceMappingURL=styles.css.map */
